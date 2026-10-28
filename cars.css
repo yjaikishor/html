@@ -1,0 +1,124 @@
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Page styling */
+body {
+    background-color: aliceblue;
+    padding: 30px;
+}
+
+/* Cards container */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual card */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Card hover effect */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(255, 19, 235, 0.4);
+}
+
+/* Card image */
+.card img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Card content */
+.card-content {
+    padding: 25px;
+    text-align: center;
+}
+
+/* Card heading */
+.card-content h2 {
+    margin-bottom: 10px;
+    color: blueviolet;
+    font-size: 24px;
+}
+
+/* Card description */
+.card-content p {
+    margin-bottom: 20px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Buttons container */
+.card-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Buttons */
+.card-buttons button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.card-buttons button:hover {
+    background-color: indigo;
+}
+
+/* Tablet responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+}
+
+/* Mobile responsive design */
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+}

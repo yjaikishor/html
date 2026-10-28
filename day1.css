@@ -1,0 +1,19 @@
+p{
+    background-color: red;
+    font-family: cursive;
+}
+p.para1{
+    background-color: green;
+    font-family: 'Times New Roman', Times, serif;
+}
+body p{
+    background-color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a.para1{
+    background-color: aqua;
+}
+a[href]{
+    background-color: red;
+}
